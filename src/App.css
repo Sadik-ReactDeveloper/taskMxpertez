@@ -1,0 +1,289 @@
+.NavBar {
+  background: url(https://thumbs.dreamstime.com/b/planets-galaxy-science-fiction-wallpaper-beauty-deep-space-planets-galaxy-science-fiction-wallpaper-beauty-deep-123015144.jpg?w=992);
+  /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.inc.com%2Fyazin-akkawi%2Fwhat-science-fiction-has-taught-us-about-predicting-future-and-why-we-should-be-worried.html&psig=AOvVaw1BW-Ecvy6j4jXWtuSZ9_aJ&ust=1714226367318000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDrsbeF4IUDFQAAAAAdAAAAABAE); */
+  /* background-repeat: no-repeat; */
+  min-height: 250px;
+  /* width: 100%; */
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.ulList {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  list-style: none;
+  color: #fff;
+  /* padding: 5px 20px; */
+  
+}
+.InsideulList {
+  display: flex;
+  /* justify-content: space-between; */
+  list-style: none;
+  /* padding: 5px 20px; */
+}
+ul.ulList {
+  margin: 0px;
+}
+
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  /* background-color: #333; */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left and Right Items */
+.left-items, .right-items {
+  display: flex;
+  align-items: center;
+}
+
+/* Center Items */
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Styling Individual Items */
+.header-item {
+  padding: 10px;
+}
+
+button {
+  border-radius: 22px !important;
+  
+}
+.heading{
+  text-align: center;
+  color: #fff;
+  margin: 40px  0px;
+}
+
+/* card start */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 15px;
+  /* border: 10px solid red; */
+  /* background-image: linear-gradient(45deg, #5C24C1, #2498C2); */
+  background-image: linear-gradient(87deg, #5C24C1 14%, #2498C2 41%);
+  padding: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card .logo {
+  width: 100%;
+  height: 151px;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: right;
+}
+ .card .cardTitle {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 17px;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+button.cartBtn {
+  display: block;
+  width: 100%;
+  color: #3e64c2;
+}
+.header-item .btn1{
+  background-color: #1C84FF;
+  color: #fff;
+}
+.header-item .btn2{
+  background-color: #FFBF1A;
+  color: #fff;
+}
+.header-item .btn3{
+  background-color: #1AFF5A;
+  color: #fff;
+}
+.header-item .btn4{
+  /* background-color: #3A9AEB; */
+  color: #fff;
+  background-image: linear-gradient(87deg, #5C24C1, #2498C2);
+}
+/* Media Query for responsiveness */
+@media only screen and (max-width: 600px) {
+  .center-items {
+    display: none;
+  }
+}
+
+
+.app-header {
+  display:block;
+  padding: 30px;
+}
+
+.app-title {
+  display:inline-block;
+  width: 100%;
+  margin: 80px 0 0 0;
+  float:left;
+  position:relative;
+  color:#fff;
+  
+  @media(min-width:768px) {
+    width: 20%;
+    margin: 280px 0 0 0;
+  }
+  
+  h1 {
+    font-size: 52px;
+    margin: 0;
+  }
+  
+  p {
+    font-weight: 200;
+    opacity: .5;
+  }
+  
+}
+
+.app-title-content {
+  position:relative;
+  top:50%;
+  left: 50%;
+  width:100%;
+  text-align:center;
+  transform:translate(-50%, -50%);
+  
+  @media(min-width:768px) {
+    width:auto;
+    position:absolute;
+    text-align:left;
+  }
+}
+
+.app-card-list {
+  display:inline-block;
+  width:100%;
+  float:right;
+  margin:0;
+  min-height: 75vh;
+  white-space:normal;
+  overflow-x: scroll;
+  margin-top:-70px;
+  
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+  
+  @media(min-width:768px) {
+      width:80%;
+      white-space:nowrap;
+      margin-top: 0;
+  }
+  
+  .card {
+    margin: 60px 30px;
+    display: inline-block;
+    
+    .card-body {
+        white-space: normal;
+    }
+  }
+}
+
+.designer-link {
+  display:inline-block;
+  padding-top:40px;
+}
+.mainCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background: #000;
+  padding: 4vw;
+}
+
+.preNextbtn {
+  display: flex;
+  background: #000;
+  padding: 0vw 4vw 4vw;
+  justify-content: space-between;
+}
+
+.allCard {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 30% 1fr;
+  background: #000;
+  padding: 0vw 4vw 3vw;
+}
+.content-box {
+  background: #000;
+  padding: 4vw 4vw 3vw;
+  text-align: center;
+}
+.content-box h3 {
+  color: #fff;
+  font-size: 20px;
+}
+.left-bar {
+  background: #242446;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px dashed #5c24c1;
+}
+.card-left h2 {
+  color: #fff;
+  font-size: 20px;
+}
+.card-left p {
+  color: #fff;
+  font-size: 15px;
+  margin: 8px 0px;
+}
+.card-left .logo {
+  width: 100%;
+  height: 300px;
+}
+span.synonys {
+  color: #16653a;
+}
+span.antonyms {
+  color: #5d0e56;
+}
+
+.container p {
+  text-align: center;
+  color: #fff;
+}
+.right-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
